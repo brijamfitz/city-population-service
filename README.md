@@ -15,8 +15,9 @@ npm start
 
 You should see the following log in your shell:
 
-```
+```bash
 Server is running on port 5555
+City population data loaded.
 ```
 
 ## Features
