@@ -18,11 +18,17 @@ function loadCityPopulationData() {
         })
         .on('end', () => {
             console.log('City population data loaded.');
-
-            console.log(cityPopulationData);
         });
+}
+
+function getPopulation(state, city) {
+    if (cityPopulationData[state] && cityPopulationData[state][city]) {
+        return cityPopulationData[state][city];
+    }
+    return null;
 }
 
 module.exports = {
     loadCityPopulationData,
+    getPopulation,
 };
