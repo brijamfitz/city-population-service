@@ -28,7 +28,7 @@ function getPopulation(state, city) {
     return null;
 }
 
-function setPopulation(state, city, population) {);
+function setPopulation(state, city, population) {
     if (!cityPopulationData[state]) {
         cityPopulationData[state] = {};
     }
