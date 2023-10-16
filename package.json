@@ -1,0 +1,24 @@
+{
+  "name": "city-population-service",
+  "version": "1.0.0",
+  "description": "A Node.js service that allows you to get and update a city's population",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brijamfitz/city-population-service.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brijamfitz/city-population-service/issues"
+  },
+  "homepage": "https://github.com/brijamfitz/city-population-service#readme",
+  "dependencies": {
+    "csv-parser": "^3.0.0",
+    "express": "^4.18.2"
+  }
+}
