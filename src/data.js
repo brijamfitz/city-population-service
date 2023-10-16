@@ -28,7 +28,22 @@ function getPopulation(state, city) {
     return null;
 }
 
+function setPopulation(state, city, population) {);
+    if (!cityPopulationData[state]) {
+        cityPopulationData[state] = {};
+    }
+
+    if (cityPopulationData[state][city] !== undefined) {
+        cityPopulationData[state][city] = population;
+        return 'updated';
+    } else {
+        cityPopulationData[state][city] = population;
+        return 'created';
+    }
+}
+
 module.exports = {
     loadCityPopulationData,
     getPopulation,
+    setPopulation,
 };
